@@ -1,6 +1,6 @@
 Webscraper
 ----------
->Web scraping prototype(s).
+>WebScraper 1 --- url ---> 1 GithubScraper 1 ---> 1 GithubExtract
 
 Run
 ---
