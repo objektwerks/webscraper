@@ -28,12 +28,14 @@ case class GithubScraper(url: String,
 object GithubScraper {
   def scrape(url: String): GithubScraper = {
     val doc = Jsoup.connect(url).get()
-    val title = doc.title()
-    val organization = doc.select(".vcard-details li div").asScala.last.text
-    val location = doc.select(".vcard-detail .p-label").asScala.last.text
-    val experience = doc.select("div.p-note.user-profile-bio.mb-3.js-user-profile-bio.f4").asScala.last.text
-    val resume = doc.select("li.vcard-detail.pt-1 a.Link--primary").asScala.last.text
-    val contributions = doc.select("h2.f4.text-normal.mb-2").asScala.last.text()
-    GithubScraper(url, title, organization, location, experience, resume, contributions)
+    GithubScraper(
+      url = url,
+      title = doc.title(),
+      organization = doc.select(".vcard-details li div").asScala.last.text,
+      location = doc.select(".vcard-detail .p-label").asScala.last.text,
+      experience = doc.select("div.p-note.user-profile-bio.mb-3.js-user-profile-bio.f4").asScala.last.text,
+      resume = doc.select("li.vcard-detail.pt-1 a.Link--primary").asScala.last.text,
+      contributions = doc.select("h2.f4.text-normal.mb-2").asScala.last.text()
+    )
   }
 }
