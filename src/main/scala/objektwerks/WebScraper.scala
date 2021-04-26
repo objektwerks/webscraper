@@ -15,11 +15,11 @@ object WebScraper {
     val organization = doc.select(".vcard-details li div").asScala.last.text
     println(s"*** organization: $organization")
 
-    val profile = doc.select("div.p-note.user-profile-bio.mb-3.js-user-profile-bio.f4").asScala.last.text
-    println(s"*** profile: $profile")
+    val experience = doc.select("div.p-note.user-profile-bio.mb-3.js-user-profile-bio.f4").asScala.last.text
+    println(s"*** experience: $experience")
 
-    val email = doc.select(".vcard-details li div").asScala.last.text
-    println(s"*** email: $email")
+    val resume = doc.select("li.vcard-detail.pt-1 a.Link--primary").asScala.last.text
+    println(s"*** resume: $resume")
 
     val contributions = doc.select("h2.f4.text-normal.mb-2").asScala.last.text()
     println(s"*** contributions: $contributions")
