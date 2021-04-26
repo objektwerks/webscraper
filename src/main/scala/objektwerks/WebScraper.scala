@@ -15,6 +15,9 @@ object WebScraper {
     val organization = doc.select(".vcard-details li div").asScala.last.text
     println(s"*** organization: $organization")
 
+    val location = doc.select(".vcard-detail .p-label").asScala.last.text
+    println(s"*** location: $location")
+
     val experience = doc.select("div.p-note.user-profile-bio.mb-3.js-user-profile-bio.f4").asScala.last.text
     println(s"*** experience: $experience")
 
