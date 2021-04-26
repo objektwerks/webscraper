@@ -12,7 +12,7 @@ case class GithubScraper(url: String,
                          resume: String,
                          contributions: String) {
   override def toString: String = {
-    val builder = new StringBuilder(6)
+    val builder = new StringBuilder(8)
     builder ++= s"\ngithub scraper\n"
     builder ++= s"--------------\n"
     builder ++= s"- url: $url\n"
