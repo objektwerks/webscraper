@@ -1,6 +1,6 @@
 Webscrape
 ---------
->Web scraping prototypes.
+>Web scraping prototype(s).
 
 Run
 ---
