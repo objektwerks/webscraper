@@ -1,5 +1,5 @@
-Webscrape
----------
+Webscraper
+----------
 >Web scraping prototype(s).
 
 Run
