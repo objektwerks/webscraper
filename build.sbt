@@ -1,4 +1,4 @@
-name := "webscrape"
+name := "webscraper"
 organization := "objektwerks"
 version := "0.1-SNAPSHOT"
 scalaVersion := "2.13.5"
