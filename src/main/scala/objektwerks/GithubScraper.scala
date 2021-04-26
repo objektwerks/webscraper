@@ -6,7 +6,7 @@ import scala.jdk.CollectionConverters._
 
 case class GithubScraper(url: String,
                          title: String,
-                         organization: String, 
+                         organization: String,
                          location: String,
                          experience: String,
                          resume: String,
