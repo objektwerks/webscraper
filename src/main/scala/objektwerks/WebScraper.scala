@@ -8,5 +8,6 @@ object WebScraper {
     val doc = Jsoup.connect(url).get()
     println(s"*** url: $url")
     println(s"*** title: ${doc.title()}")
+    println(s"*** body: ${doc.body()}")
   }
 }
