@@ -1,6 +1,6 @@
 Webscraper
 ----------
->WebScraper 1 --- url ---> 1 GithubScraper 1 ---> 1 GithubExtract
+>WebScraper --- url ---> GithubScraper ---> GithubExtract
 
 Run
 ---
