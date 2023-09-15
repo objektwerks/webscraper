@@ -1,8 +1,8 @@
 package objektwerks
 
-import org.jsoup._
+import org.jsoup.*
 
-import scala.jdk.CollectionConverters._
+import scala.jdk.CollectionConverters.*
 
 case class GithubExtract(url: String,
                          title: String,
@@ -10,8 +10,8 @@ case class GithubExtract(url: String,
                          location: String,
                          experience: String,
                          resume: String,
-                         contributions: String) {
-  override def toString: String = {
+                         contributions: String):
+  override def toString: String =
     val builder = new StringBuilder(9)
     builder ++= s"\ngithub extract\n"
     builder ++= s"--------------\n"
@@ -23,11 +23,9 @@ case class GithubExtract(url: String,
     builder ++= s"- resume: $resume\n"
     builder ++= s"- contributions: $contributions\n"
     builder.result()
-  }
-}
 
-object GithubScraper {
-  def scrape(url: String): GithubExtract = {
+object GithubScraper:
+  def scrape(url: String): GithubExtract =
     val doc = Jsoup.connect(url).get()
     GithubExtract(
       url = url,
@@ -38,5 +36,3 @@ object GithubScraper {
       resume = doc.select("li.vcard-detail.pt-1 a.Link--primary").asScala.last.text,
       contributions = doc.select("h2.f4.text-normal.mb-2").asScala.last.text()
     )
-  }
-}
