@@ -13,7 +13,7 @@ case class GithubExtract(url: String,
                          contributions: String):
   override def toString: String =
     val builder = new StringBuilder(9)
-    builder ++= s"\ngithub extract\n"
+    builder ++= s"\nGithub Extract\n"
     builder ++= s"--------------\n"
     builder ++= s"- url: $url\n"
     builder ++= s"- title: $title\n"
