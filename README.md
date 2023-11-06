@@ -13,3 +13,7 @@ Build
 Run
 ---
 1. sbt run
+
+Resources
+---------
+* [Ultimate JSoup Cheatsheet](https://proxiesapi.com/articles/the-ultimate-jsoup-scala-cheatsheet)
