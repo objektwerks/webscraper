@@ -16,4 +16,5 @@ Run
 
 Resources
 ---------
+* [JSoup](https://jsoup.org/)
 * [Ultimate JSoup Cheatsheet](https://proxiesapi.com/articles/the-ultimate-jsoup-scala-cheatsheet)
