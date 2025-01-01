@@ -4,7 +4,7 @@ version := "0.1-SNAPSHOT"
 scalaVersion := "3.6.3-RC1"
 libraryDependencies ++= {
   Seq(
-    "org.jsoup" % "jsoup" % "1.18.2"
+    "org.jsoup" % "jsoup" % "1.18.3"
   )
 }
 scalacOptions ++= Seq(
